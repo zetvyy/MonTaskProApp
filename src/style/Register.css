@@ -31,7 +31,8 @@
     color: #fff;
 } */
 
-.container > .register > p {
+.container > .register > p,
+.container > .login > p {
     margin: 10px auto;
     font-size: 18px;
 }
@@ -73,14 +74,16 @@
     box-shadow: none;
 }
 
-.container > .register > button.btnGogle {
+.container > .register > button.btnGogle, 
+.container > .login > button.btnGogle {
     background-color: transparent;
     box-shadow: none;
     width: 150px;
     margin: 0 auto;
 }
 
-.container > .register > button.btnGogle > img {
+.container > .register > button.btnGogle > img ,
+.container > .login > button.btnGogle > img {
     width: 100%;
     height: 35px;
     object-fit: fill;
