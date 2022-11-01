@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function useDataInput() {
     const [dataUser, setDataUser] = useState({
-        name: '',
+        // username: '',
         email: '',
         password: ''
     });

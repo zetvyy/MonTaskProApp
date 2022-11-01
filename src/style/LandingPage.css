@@ -1,0 +1,100 @@
+/* Font Poppins Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Global Variables */
+:root {
+    --blue-font: rgba(90, 78, 229, 1);
+    --black-font-primary: rgba(80, 79, 82, 1);
+    --black-font-secondary: rgba(96, 99, 103, 1);
+
+    --white-primary:rgba(255, 255, 255, 1);
+    --white-secondary: rgba(239, 237, 236, 1);
+    --font-family: 'Poppins', sans-serif;
+}
+
+p,h1,h2 {
+    font-family: var(--font-family);
+}
+
+/* button style */
+
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.signup-button {
+    background-color: var(--blue-font);
+    color: var(--white-primary);
+    border-radius: 10px;
+    border: none;
+}
+
+.login-button {
+    background-color: var(--white-primary);
+    color: rgba(92, 90, 91, 1);
+    border: 2px solid var(--white-secondary);
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+    padding: 1rem 6rem;
+}
+
+/* Hero Style */
+.container-hero {
+    padding: 4rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-hero__article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+.container-hero__article h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--blue-font)
+}
+
+.container-hero__article p {
+    color: var(--black-font-secondary);
+    font-weight: 400;
+}
+
+.hero-girl-image {
+    width: 100%;
+    height: auto
+}
+
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+    
+    .container-hero {
+        grid-template-columns: 1fr;
+        padding: 1rem 1.5rem;
+    }
+
+    .container-hero__article {
+        row-gap: 0.1rem;
+    }
+
+    .container-hero__article h1 {
+        font-size: 2.5rem;
+    }
+}
