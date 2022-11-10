@@ -4,6 +4,7 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import '../style/App.css';
 import LandingPage from '../pages/LandingPage';
+import ListActivity from '../pages/ListActivity';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={
-            <LandingPage />
+            <ListActivity />
           }></Route>
           <Route path="/register" element={
             <Register/>
