@@ -86,7 +86,7 @@ body {
 }
 
 .profile-edit__main label {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -97,7 +97,8 @@ body {
   border-left-style: hidden;
   border-bottom-style: groove;
   background-color: rgba(0, 126, 253, 0.15);
-  height: 20px;
+  height: 30px;
+  width: 250px;
 }
 
 .button-save {
@@ -108,5 +109,12 @@ body {
   color: #fff;
   position: relative;
   left: 370px;
-  bottom: 0;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 5%;
+  font-size: 18px;
+}
+
+.button-save:hover {
+  background-color: #8e8cd8;
 }
