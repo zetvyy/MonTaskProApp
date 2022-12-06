@@ -4,6 +4,7 @@
 /* Global Variables */
 :root {
     --blue-font: rgba(90, 78, 229, 1);
+    --blue-font-secondary: rgb(50, 35, 95);
     --blue-background: rgba(227, 246, 249, 1);
     --black-background: rgba(27, 26, 30, 1);
 
@@ -22,6 +23,23 @@
 
 p,h1,h2,h3 {
     font-family: var(--font-family);
+}
+
+li {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white-primary);
+    box-sizing: border-box;
+}
+
+a:hover {
+    font-weight: 700;
 }
 
 .image {
@@ -43,6 +61,11 @@ p,h1,h2,h3 {
     border-radius: 10px;
     font-weight: 600;
     font-size: 16px;
+    box-shadow: transparent;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .signup-button {
@@ -78,9 +101,20 @@ p,h1,h2,h3 {
 /* Navbar Style */
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     column-gap: 1rem;
     padding: 1rem 6rem;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.navbar-btn {
+    display: flex;
+    column-gap: 1rem;
 }
 
 /* Hero Style */
@@ -92,7 +126,8 @@ p,h1,h2,h3 {
 .container-hero__article {
     display: flex;
     flex-direction: column;
-    row-gap: 0.8rem;
+    row-gap: 5rem;
+    justify-content: center;
 }
 
 .container-hero__article h1 {
@@ -110,10 +145,11 @@ p,h1,h2,h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
+    margin-top: 3rem;
 }
 
 .container-service__item {
-    background-color: var(--blue-background);
+    background-color: var(--white-primary);
     border-radius: 16px;
     padding: 1rem 1.5rem;
     box-shadow: 4px 6px 9px var(--black-shadow);
@@ -126,7 +162,7 @@ p,h1,h2,h3 {
     column-gap: 2rem;
     border-radius: 20px;
     background-color: var(--black-background);
-    color: var(--blue-background);
+    color: var(--white-primary);
     position: relative;
     height: 300px;
     margin-bottom: 30px;
@@ -150,6 +186,75 @@ p,h1,h2,h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+/* Frequently Asked Question Style */
+.container-faq {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.container-faq__content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.container-faq__item {
+    background-color: var(--white-primary);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    box-shadow: 4px 6px 9px var(--black-shadow);
+}
+
+.container-faq__item .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.container-faq__item h3, span {
+    font-size: 1.1rem;
+}
+
+.container-faq__item .content {
+    display: none;
+}
+
+.container-faq__item .content.show {
+    display: block;
+}
+
+/* Footer Style */
+footer {
+    background-color: var(--blue-font-secondary);
+    margin-top: 4rem;
+    color: var(--white-primary);
+}
+
+.container-footer__link {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 4rem 6rem;
+}
+
+.container-footer__link ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.container-footer__copy {
+    padding: 2rem 6rem;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Media Query 1132px */
@@ -176,13 +281,19 @@ p,h1,h2,h3 {
         justify-content: center;
         padding: 1rem 1.5rem;
     }
+
+    .navbar-logo {
+        display: none;
+    }
     
     .container-hero {
+        margin-top: 1rem;
+        row-gap: 1rem;
         grid-template-columns: 1fr;
     }
 
     .container-hero__article {
-        row-gap: 0.1rem;
+        row-gap: 2rem;
     }
 
     .container-hero__article h1 {
@@ -201,10 +312,16 @@ p,h1,h2,h3 {
     }
 
     .container-testimoni__content__imageWrapper {
-        margin-left: 0;        
+        display: none;
     }
 
-    .container-testimoni__content__imageWrapper .testimoni-girl {
-        border-radius: 50%;
+    .container-faq__content {
+        grid-template-columns: 1fr;
+    }
+
+    .container-footer__link {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        padding: 2rem 1.5rem;
     }
 }
