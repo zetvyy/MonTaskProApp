@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
+import Notes from "../pages/Notes";
 import "../style/App.css";
 import LandingPage from "../pages/LandingPage";
 import ListActivity from "../pages/ListActivity";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/notes" element={<Notes />} />
         </Routes>
       </main>
     </div>
