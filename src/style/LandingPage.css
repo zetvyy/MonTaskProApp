@@ -4,7 +4,10 @@
 /* Global Variables */
 :root {
     --blue-font: rgba(90, 78, 229, 1);
+<<<<<<< HEAD
     --blue-font-secondary: rgb(50, 35, 95);
+=======
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     --blue-background: rgba(227, 246, 249, 1);
     --black-background: rgba(27, 26, 30, 1);
 
@@ -25,6 +28,7 @@ p,h1,h2,h3 {
     font-family: var(--font-family);
 }
 
+<<<<<<< HEAD
 li {
     list-style: none;
     box-sizing: border-box;
@@ -42,6 +46,8 @@ a:hover {
     font-weight: 700;
 }
 
+=======
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
 .image {
     width: 100%;
     height: auto;
@@ -61,11 +67,14 @@ a:hover {
     border-radius: 10px;
     font-weight: 600;
     font-size: 16px;
+<<<<<<< HEAD
     box-shadow: transparent;
 }
 
 .btn:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+=======
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
 }
 
 .signup-button {
@@ -101,6 +110,7 @@ a:hover {
 /* Navbar Style */
 .navbar {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
@@ -115,6 +125,11 @@ a:hover {
 .navbar-btn {
     display: flex;
     column-gap: 1rem;
+=======
+    justify-content: flex-end;
+    column-gap: 1rem;
+    padding: 1rem 6rem;
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
 }
 
 /* Hero Style */
@@ -126,8 +141,12 @@ a:hover {
 .container-hero__article {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     row-gap: 5rem;
     justify-content: center;
+=======
+    row-gap: 0.8rem;
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
 }
 
 .container-hero__article h1 {
@@ -145,11 +164,18 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
+<<<<<<< HEAD
     margin-top: 3rem;
 }
 
 .container-service__item {
     background-color: var(--white-primary);
+=======
+}
+
+.container-service__item {
+    background-color: var(--blue-background);
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     border-radius: 16px;
     padding: 1rem 1.5rem;
     box-shadow: 4px 6px 9px var(--black-shadow);
@@ -162,7 +188,11 @@ a:hover {
     column-gap: 2rem;
     border-radius: 20px;
     background-color: var(--black-background);
+<<<<<<< HEAD
     color: var(--white-primary);
+=======
+    color: var(--blue-background);
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     position: relative;
     height: 300px;
     margin-bottom: 30px;
@@ -188,6 +218,7 @@ a:hover {
     align-items: flex-start;
 }
 
+<<<<<<< HEAD
 /* Frequently Asked Question Style */
 .container-faq {
     display: flex;
@@ -257,6 +288,8 @@ footer p {
     font-weight: 400;
 }
 
+=======
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
 /* Media Query 1132px */
 @media screen and (max-width: 1132px) {
 
@@ -281,6 +314,7 @@ footer p {
         justify-content: center;
         padding: 1rem 1.5rem;
     }
+<<<<<<< HEAD
 
     .navbar-logo {
         display: none;
@@ -289,11 +323,19 @@ footer p {
     .container-hero {
         margin-top: 1rem;
         row-gap: 1rem;
+=======
+    
+    .container-hero {
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
         grid-template-columns: 1fr;
     }
 
     .container-hero__article {
+<<<<<<< HEAD
         row-gap: 2rem;
+=======
+        row-gap: 0.1rem;
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     }
 
     .container-hero__article h1 {
@@ -312,6 +354,7 @@ footer p {
     }
 
     .container-testimoni__content__imageWrapper {
+<<<<<<< HEAD
         display: none;
     }
 
@@ -323,5 +366,12 @@ footer p {
         grid-template-columns: 1fr;
         row-gap: 2rem;
         padding: 2rem 1.5rem;
+=======
+        margin-left: 0;        
+    }
+
+    .container-testimoni__content__imageWrapper .testimoni-girl {
+        border-radius: 50%;
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     }
 }

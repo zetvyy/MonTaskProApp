@@ -1,5 +1,9 @@
 .sideBar {
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: #ECE9FE;
+>>>>>>> 6dbe89841f11b20f0aba936186580e09817ce37f
     width: 60px;
     height: 100vh;
     display: flex;
