@@ -7,6 +7,7 @@ import "../style/App.css";
 import LandingPage from "../pages/LandingPage";
 import ListActivity from "../pages/ListActivity";
 import Profile from "../pages/Profile";
+import Beranda from "../pages/Beranda";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/beranda" element={<Beranda />} />
           <Route path="/activity" element={<ListActivity />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+.newtask-box {
+    width: 100%;
+    height: 50%;
+    flex: 0.5;
+    -webkit-box-shadow: -10px 0px 13px -7px  #958dec;
+    box-shadow: -10px 0px 13px -7px  #958dec;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+}
+
+.title-newtask-box {
+    color: #3F0071;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-newtask {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #DC3535;
+}
+
+.list-newtask-box {
+    margin: 10px;
+    padding: 10px;
+    list-style: circle;
+    align-items: center;
+}
+
+.item-list-newtask-box {  
+    display: flex;  
+    align-items: center;
+    padding: 8px;
+    justify-content:space-around;
+    margin: 0px;
+    object-fit: cover;
+}
+
+.button-show {
+    display: flex;
+    align-items: center;
+    border: solid #FFFFFF 2px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #958dec;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-show2 {
+    font-size: 12px !important;
+    margin-right: 10px;
+}

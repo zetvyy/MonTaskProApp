@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.AddNoteActivity {
+    flex: 1;
+    margin-top: auto 0px;
+    padding: 10px;
+}
+
+.AddNoteActivity__content {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 15px;
+    margin-top: -650px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.AddNoteActivity1 {
+    margin-left: 75px;
+    margin: 50px;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.AddNoteActivity__content-note {
+    overflow: auto;
+} 
+
