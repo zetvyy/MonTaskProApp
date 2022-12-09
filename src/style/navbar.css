@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #fff;
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.navbar > .searchInput {
+    width: 80%;
+}
+
+.navbar > .searchInput > input {
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 30px;
+}

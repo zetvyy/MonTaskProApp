@@ -8,6 +8,7 @@ import { getAnalytics } from "firebase/analytics";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyB9tP6LYOhu6Zm4ItN-VL5gF6wZeiIHxa0",
+  databaseURL: "https://task-management-sib-default-rtdb.asia-southeast1.firebasedatabase.app",
   authDomain: "task-management-sib.firebaseapp.com",
   projectId: "task-management-sib",
   storageBucket: "task-management-sib.appspot.com",

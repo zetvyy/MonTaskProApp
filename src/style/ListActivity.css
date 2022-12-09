@@ -2,5 +2,124 @@
     width: 100vw;
     min-height: 100vh;
     display: flex;
+    background-color: #fff;
+    font: 'Poppins', sans-serif;
+}
+
+.content__titleandbutton {
+    display: flex;
+    width: 80%;
+    margin: 40px auto 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.titleandbutton__title > p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: 0;
+}
+
+.titleandbutton__title > h2 {
+    font-weight: 400;
+}
+
+.titleandbutton__button > button {
+    border: none;
+    background-color: #5A4EE5;
+    width: 110px;
+    height: 30px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .2);
+}
+
+.content__task {
+    width: 80%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__todo, 
+.task__inproggres,
+.task__completed {
+    width: 300px;
+}
+
+.task__title {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.task__title > p {
+    font-size: 15px;
+}
+
+.task__title.todo {
+    color: #5A4EE5;
+}
+
+/* .task__title.todo >  */
+
+.task__line.todo {
+    background-color: #5A4EE5;
+    box-shadow: 0 0 1px #5A4EE5;
+}
+.title_count.todo {
     background-color: #ECE9FE;
+}
+
+.task__title.inproggres {
+    color: #43BFF4;
+}
+
+.task__line.inproggres {
+    background-color: #43BFF4;
+    box-shadow: 0 0 1px #43BFF4;
+}
+.title_count.inproggres {
+    background-color: #E3F6F9;
+}
+
+.task__title.completed {
+    color: #94BBE2;
+}
+
+.task__line.completed {
+    background-color: #94BBE2;
+    box-shadow: 0 0 1px #94BBE2;
+}
+.title_count.completed {
+    background-color: #E3F6F9;
+}
+
+.task__line {
+    width: 300px;
+    background-color: black;
+    height: 1px;
+    margin: 12px 0;
+}
+
+.title_count {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.task_card_container, 
+.inproggres_card_container,
+.completed_card_container {
+    margin-top: 15px;
+}
+
+.task_card_container > p {
+    text-align: center;
+    font-size: .9em;
+    color: rgba(0, 0, 0, .5);
 }

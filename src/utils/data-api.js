@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import app from "../config/firebase/firebase";
+import { getDatabase, ref, push, onValue ,set,remove} from "firebase/database";
 
 export const registerPage = (data) => {
   return new Promise((resolve, reject) => {
@@ -62,3 +63,148 @@ export const loginByEmailPass = (data) => {
       });
   });
 };
+
+export const saveData = (data) => {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase()
+        push(ref(db, 'users/' + data.userId + '/nextUp'),{
+            judul: data.judul,
+            deadline: data.deadline,
+            content: data.content,
+            step: "nextUp"
+        }).then(() => {
+            resolve(true)
+        })
+        .catch((error => {
+            console.log(error);
+            reject(false)
+        }))
+    })
+}
+
+export const inProgres = (data,userId) =>  {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase()
+        push(ref(db, `users/${userId}/inProgres`),{
+            judul: data.value.judul,
+            deadline: data.value.deadline,
+            content: data.value.content,
+            step: "inProgres"
+        }).then(() => {
+            resolve(true)
+        })
+        .catch((error => {
+            reject(false)
+        }))
+    })
+}
+
+export const Completed = (data,userId) =>  {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase()
+        push(ref(db, `users/${userId}/Completed`),{
+            judul: data.value.judul,
+            deadline: data.value.deadline,
+            content: data.value.content,
+            step: "Completed"
+        }).then(() => {
+            resolve(true)
+        })
+        .catch((error => {
+            reject(false)
+        }))
+    })
+}
+
+export const getData = (id) => {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase();
+        const starCountRef = ref(db,`users/${id}/nextUp`)
+        onValue(starCountRef, (snapshot) => {
+            const data = []
+            if(snapshot.val() != null){
+                Object.keys(snapshot.val()).forEach(e => {
+                    data.push({
+                        id: e,
+                        value: snapshot.val()[e]
+                    })
+                })
+            }
+            resolve(data)
+        });
+    })
+}
+
+export const getDataInProgres = (id)  => {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase();
+        const starCountRef = ref(db,`users/${id}/inProgres`)
+        onValue(starCountRef, (snapshot) => {
+            const data = []
+            if(snapshot.val() != null){
+                Object.keys(snapshot.val()).forEach(e => {
+                    data.push({
+                        id: e,
+                        value: snapshot.val()[e]
+                    })
+                })
+            }
+            resolve(data)
+        });
+    })
+}
+
+export const getDataCompleted = (id) => {
+    return new Promise((resolve , reject) => {
+        const db = getDatabase();
+        const starCountRef = ref(db,`users/${id}/Completed`)
+        onValue(starCountRef, (snapshot) => {
+            const data = []
+            if(snapshot.val() != null){
+                Object.keys(snapshot.val()).forEach(e => {
+                    data.push({
+                        id: e,
+                        value: snapshot.val()[e]
+                    })
+                })
+            }
+            resolve(data)
+        });
+    })
+}
+
+export const updateData = (data,action,id) => (dispatch) => {
+    return new Promise((resolve , reject) => {
+        dispatch({type: "LOADING", value: true})
+        const db = getDatabase()
+        set(ref(db, `users/${id}/${action}/${data.id}`),{
+            judul: data.judul,
+            deadline: data.deadline,
+            content: data.content,
+            step:action
+        }).then(() => {
+            dispatch({type: "LOADING", value: false})
+            dispatch({type: "SENDING_SUCCES", value: 'true'})
+            resolve(true)
+        })
+        .catch((error => {
+            console.log(error)
+            dispatch({type: "SENDING_SUCCES", value: true})
+            dispatch({type: "LOADING", value: false})
+            reject(false)
+        }))
+    })
+}
+
+export const deleteData = (id,userId,type,action) =>  {
+    const db = getDatabase()
+    remove(ref(db, `users/${userId}/${action}/${id}` ))
+    .then(() => {
+        if(type !== 'move'){
+            alert('Delete succes')
+        }
+    })
+    .catch(error => {
+        console.log(error)
+    })
+}

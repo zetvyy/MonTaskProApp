@@ -1,0 +1,70 @@
+.card__activity {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    padding: 15px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: .95em;
+    letter-spacing: .8px;
+    color: rgba(0, 0, 0, .8);
+    margin-top: 10px;
+    transition: all ease-in-out .18s;
+}
+
+.card__activity:hover {
+    transform: translateY(-4px);
+}
+
+.card__activity > .card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__header > .header__title {
+    font-size: 1.2em;
+}
+
+.card__header > .header__date {
+    font-size: .7em;
+    color: rgba(0, 0, 0, .5);
+}
+
+.card__contain > p {
+    font-size: .95em;
+    color: rgba(0, 0, 0, .8);
+}
+
+.action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.action > .delete > button,
+.action > .move > button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: transparent;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.action > .delete > button {
+    background-image: url(../asset/icons/delete.svg)
+}
+
+.action > .move > button {
+    background-image: url(../asset/icons/progres.svg);
+}
+.action > .complete > button {
+    background-image: url(../asset/icons/completed.svg);
+}
