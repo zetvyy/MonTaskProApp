@@ -5,20 +5,13 @@
     padding: 0px;
 }
 
-.AddNoteActivity {
-    flex: 1;
-    margin-top: auto 0px;
-    padding: 10px;
-}
-
 .AddNoteActivity__content {
     display: flex;
     width: auto;
     height: auto;
-    margin: 15px;
-    margin-top: -650px;
     margin-left: 50px;
     font-size: 20px;
+    padding: 1rem 1rem 1rem;
 }
 
 .AddNoteActivity1 {
