@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.add-note {
+    width: 59%;
+    height: 200px;
+    margin-top: 40px;
+    border: 3px solid #5A4EE5;
+    border-radius: 20px;
+}
+
+.add-note > textarea {
+    margin-top: 8px;
+    margin-right: 8px;
+    border: none;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+}
+
+.add-button {
+    width: 130px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #958dec;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.warning-sign {
+    margin: 40px;
+    font-size: 14px;
+    font-weight: bold;   
+}

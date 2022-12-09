@@ -5,7 +5,6 @@ import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import app from "../config/firebase/firebase";
 import { getDatabase, ref, push, onValue ,set,remove} from "firebase/database";
 
 export const registerPage = (data) => {
