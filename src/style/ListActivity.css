@@ -1,15 +1,15 @@
 .listActivity {
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     font: 'Poppins', sans-serif;
 }
 
 .listActivity__content {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 1rem;
     background-color: #F6F8FA !important;
-    /* z-index: -1; */
 }
 
 .content__titleandbutton {
