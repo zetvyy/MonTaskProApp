@@ -8,6 +8,7 @@
   justify-content: space-between;
   padding: 10px;
   position: fixed;
+  z-index: 3;
 }
 
 .sideBar__logo,

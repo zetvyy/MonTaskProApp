@@ -1,10 +1,11 @@
 .AddNoteActivity {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
 .AddNoteActivity__content {
     width: 100%;
+    min-height: 100vh;
     background-color: #F6F8FA !important;
 }
