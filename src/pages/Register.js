@@ -3,7 +3,7 @@ import useDataInput from "../utils/custom-hooks";
 import { useNavigate } from "react-router-dom";
 import { registerPage } from "../utils/data-api";
 import { FormLoginRegis } from "../components/formLogingRegis";
-import { validasiFormRegisLogin } from "../utils/reuseFuction";
+import { validasiFormRegisLogin } from "../utils/validasiLoginRegister";
 import "../style/Register.css";
 
 function Register() {

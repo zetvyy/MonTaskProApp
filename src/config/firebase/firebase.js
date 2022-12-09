@@ -10,8 +10,8 @@ import { getDatabase, set, ref, onValue } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB9tP6LYOhu6Zm4ItN-VL5gF6wZeiIHxa0",
-  authDomain: "task-management-sib.firebaseapp.com",
   databaseURL: "https://task-management-sib-default-rtdb.asia-southeast1.firebasedatabase.app",
+  authDomain: "task-management-sib.firebaseapp.com",
   projectId: "task-management-sib",
   storageBucket: "task-management-sib.appspot.com",
   messagingSenderId: "1057208098438",

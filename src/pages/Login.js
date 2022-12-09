@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { loginByEmailPass, registerPageWithGogle } from "../utils/data-api";
 import logoGogle from "../asset/icons/btn_google_signin_dark_pressed_web@2x.png";
 import { FormLoginRegis } from "../components/formLogingRegis";
-import { validasiFormRegisLogin } from "../utils/reuseFuction";
+import { validasiFormRegisLogin } from "../utils/validasiLoginRegister";
 import "../style/Register.css";
 
 function Login() {
@@ -18,6 +18,12 @@ function Login() {
   const onHandleSubmit = async () => {
     const response = await loginByEmailPass(dataUser).catch((err) => err);
     validasiFormRegisLogin(response);
+    if (response.uid !== undefined) {
+      localStorage.setItem("id", response.uid);
+      setTimeout(() => {
+        navigate("/activity");
+      }, 1610)
+    }
   };
 
   const onHandleSubmitWithGoogle = async () => {
