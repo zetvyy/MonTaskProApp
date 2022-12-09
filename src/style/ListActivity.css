@@ -2,8 +2,14 @@
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    background-color: #fff;
+    flex-direction: column;
     font: 'Poppins', sans-serif;
+}
+
+.listActivity__content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F8FA !important;
 }
 
 .content__titleandbutton {
@@ -121,5 +127,4 @@
 .task_card_container > p {
     text-align: center;
     font-size: .9em;
-    color: rgba(0, 0, 0, .5);
 }
