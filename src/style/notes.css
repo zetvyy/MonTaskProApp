@@ -1,0 +1,10 @@
+.AddNoteActivity {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.AddNoteActivity__content {
+    width: 100%;
+    background-color: #F6F8FA !important;
+}

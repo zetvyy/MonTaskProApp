@@ -2,7 +2,6 @@
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     font: 'Poppins', sans-serif;
 }
 
@@ -10,6 +9,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #F6F8FA !important;
+    /* z-index: -1; */
 }
 
 .content__titleandbutton {
