@@ -22,4 +22,4 @@ jobs:
       - name: Run Automated Test
         run: |
           npm install
-          npm run test
+          npm run test --passWithNoTests
