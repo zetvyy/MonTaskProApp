@@ -8,6 +8,7 @@ import LandingPage from "../pages/LandingPage";
 import ListActivity from "../pages/ListActivity";
 import ErrorPage from "../pages/ErrorPage";
 import Profile from "../pages/Profile";
+// import Beranda from "../pages/Beranda";
 import ProtectedRoute from "../components/protecRouting";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             }
           />
           <Route path="*" element={<ErrorPage />} />
+          {/* <Route path="/beranda" element={<Beranda/>} /> */}
         </Routes>
       </main>
     </div>
