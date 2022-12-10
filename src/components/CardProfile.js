@@ -4,13 +4,14 @@ import { TbCalendarTime } from "react-icons/tb";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 import { SlLocationPin } from "react-icons/sl";
+import ProfileFoto from "../asset/profileFoto.webp";
 import "../style/Profile.css";
 
 const CardProfile = () => {
   return (
     <div className="profile-content__info">
       <div className="profile-header">
-        <img src="" alt="profile photo" className="profile-image" />
+        <img src={ProfileFoto} alt="profile photo" className="profile-image" />
         <span className="my-profile">
           <p className="profile__name">Xiao Nai</p>
           <p>Student of Computer at Universitas Tianghua</p>
