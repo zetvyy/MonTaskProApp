@@ -9,7 +9,7 @@ import "../style/Beranda.css";
 const Beranda = () => {
     return (
         <React.Fragment>
-            <SideBar active="task" />
+            <SideBar active="home" />
             <Navbar />
             <div className="AddNoteActivity__content-beranda">
                 <InfoLastAct />

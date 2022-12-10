@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import "../../style/AddNote.css";
 import { RiErrorWarningFill } from "react-icons/ri";
-import { database as db, set, ref, onValue} from "../../config/firebase/firebase";
+import { database as db, set, ref, onValue, push} from "../../config/firebase/firebase";
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from "react-toast"; 
 
 const AddNote = () => {
     const [text, setText] = useState("")
+    const id = localStorage.getItem("id");
     const addNote = () => {
         //query..
         if (text) {
             //add to db.
-            set(ref(db, 'notes/' + uuidv4()), {
+            push(ref(db, `users/${id}/notes`), {
                 note: text,
                 createdAt: Date.now(),
               }). then((err) => {
-                 
+                 console.log(err);
                 if (!err) {
                     toast.success("Berhasil menambahkan notes!");
                     setText("");
                     //check data;
-                    onValue(ref(db, "notes"), (snapshot) => {
+                    onValue(ref(db, `users/${id}/notes`), (snapshot) => {
                         let _data = snapshot.val();
 
                         for (let key in _data) {

@@ -8,7 +8,7 @@ import "../style/notes.css"
 const Notes = () => {
     return (
         <div className="AddNoteActivity">
-            <SideBar active="task" />
+            <SideBar active="documents" />
             <div className="AddNoteActivity__content">
                 <Navbar />
                 <AddNote />

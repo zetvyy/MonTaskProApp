@@ -21,7 +21,7 @@ function Login() {
     if (response.uid !== undefined) {
       localStorage.setItem("id", response.uid);
       setTimeout(() => {
-        navigate("/activity");
+        navigate("/Beranda");
       }, 1610)
     }
   };
