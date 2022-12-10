@@ -4,7 +4,7 @@ import "../style/Profile.css";
 const CardProfileEdit = () => {
   return (
     <div className="profile-content__edit">
-      <h1>Edit Profile</h1>
+      <h1 className="profile-content__h1">Edit Profile</h1>
       <hr className="profile__linebreak" />
       <div className="profile-edit__main">
         <label htmlFor="username">Username</label>
