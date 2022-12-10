@@ -16,8 +16,7 @@ const AddNote = () => {
                 note: text,
                 createdAt: Date.now(),
               }). then((err) => {
-                 console.log(err);
-                if (!err) {
+                if (err) {
                     toast.success("Berhasil menambahkan notes!");
                     setText("");
                     //check data;

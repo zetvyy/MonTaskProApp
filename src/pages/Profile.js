@@ -6,13 +6,15 @@ import "../style/Profile.css";
 
 const Profile = () => {
   return (
-    <div className="profile">
+    <React.Fragment>
       <SideBar action="setting"/>
-      <main className="profile-content">
-        <CardProfile />
-        <CardProfileEdit />
-      </main>
-    </div>
+      <div className="profile">
+        <main className="profile-content">
+          <CardProfile />
+          <CardProfileEdit />
+        </main>
+      </div>  
+    </React.Fragment>
   );
 };
 
