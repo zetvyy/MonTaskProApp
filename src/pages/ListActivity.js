@@ -188,7 +188,7 @@ function ListActivity() {
             <div className="task__line inproggres"></div>
             <div className="inproggres_card_container">
               {dataInProgress !== undefined ? (
-                dataInProgress !== 0 ? (
+                dataInProgress.length !== 0 ? (
                   <Fragment>
                     {dataInProgress.map((e) => {
                       return (

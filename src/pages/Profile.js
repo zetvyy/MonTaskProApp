@@ -7,7 +7,7 @@ import "../style/Profile.css";
 const Profile = () => {
   return (
     <div className="profile">
-      <SideBar />
+      <SideBar action="setting"/>
       <main className="profile-content">
         <CardProfile />
         <CardProfileEdit />

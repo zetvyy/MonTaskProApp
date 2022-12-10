@@ -6,11 +6,12 @@ import Moment from 'react-moment';
 const NotesList = () => {
     const [ notesList, setNotesList ] = useState([]);
     const [ isLoading, setIsLoading] = useState(true);
+    const id = localStorage.getItem("id");
 
     const monthList = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     useEffect(() => {
 
-        onValue(ref(database, "notes"), (snapshot) => {
+        onValue(ref(database, `users/${id}/notes`), (snapshot) => {
            let _data = snapshot.val();
            let _notesList = [];
 
