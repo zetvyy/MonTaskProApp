@@ -1,14 +1,15 @@
 .listActivity {
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    flex-direction: column;
     font: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .listActivity__content {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 1rem;
     background-color: #F6F8FA !important;
 }
 
@@ -44,8 +45,9 @@
 .content__task {
     width: 80%;
     margin: 40px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
 }
 
 .task__todo, 
@@ -103,7 +105,7 @@
 }
 
 .task__line {
-    width: 300px;
+    width: 100%;
     background-color: black;
     height: 1px;
     margin: 12px 0;
@@ -127,4 +129,39 @@
 .task_card_container > p {
     text-align: center;
     font-size: .9em;
+}
+
+@media screen and (max-width: 1152px) {
+    .content__task {
+        width: 90%;
+        margin: 40px 0 0 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content__titleandbutton {
+        width: 75%;
+        margin: 40px auto 0 150px;
+    }
+
+    .task__todo, 
+    .task__inproggres,
+    .task__completed {
+        width: 85%;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    .listActivity {
+        overflow-x: hidden;
+    }
+
+    .content__task {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content__titleandbutton {
+        width: 65%;
+        margin: 40px auto 0 100px;
+    }
 }

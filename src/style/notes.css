@@ -1,0 +1,17 @@
+.AddNoteActivity {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+}
+
+.AddNoteActivity__content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F6F8FA !important;
+}
+
+@media  screen and (max-width: 800px) {
+    .AddNoteActivity__content {
+        overflow-x: hidden;
+    }
+}

@@ -12,6 +12,8 @@
     color: rgba(0, 0, 0, .8);
     margin-top: 10px;
     transition: all ease-in-out .18s;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .card__activity:hover {
