@@ -53,3 +53,12 @@
     font-size: 14px;
     font-weight: bold;   
 }
+
+@media  screen and (max-width: 800px) {
+    .add-note {
+        width: 70%;
+        height: 200px;
+        margin-left: 50px;
+    }
+}
+    
