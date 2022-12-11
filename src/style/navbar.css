@@ -8,7 +8,7 @@
 .navbar {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 55px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -20,22 +20,14 @@
     box-shadow: inset 0 -5px 8px -5px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
-.searchInput {
-    width: 50%;
-    height: 70%;
-}
-.searchInput > input {
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    padding: 0 20px;
 
-}
 
-.navbar-title{
-    font-weight: bold;
+.navbar-title ,
+.searchInput > p{
+    font-weight: lighter;
     font-size: 24px;
+    color: rgba(0, 0, 0, .7);
+
 }
 
 @media  screen and (max-width: 500px) {

@@ -131,10 +131,9 @@ function ListActivity() {
     <div className="listActivity">
       <SideBar active="task" />
       <div className="listActivity__content">
-        <Navbar />
+        <Navbar title="Activity" />
         <div className="content__titleandbutton">
           <div className="titleandbutton__title">
-            <p className="title__name">Kamu nanya</p>
             <h2 className="title__header">My Task</h2>
           </div>
           <div className="titleandbutton__button">

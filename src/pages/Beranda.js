@@ -10,7 +10,7 @@ const Beranda = () => {
     return (
         <React.Fragment>
             <SideBar active="home" />
-            <Navbar />
+            <Navbar title="Home" />
             <div className="AddNoteActivity__content-beranda">
                 <InfoLastAct />
                 <InfoNewTask />
