@@ -199,16 +199,16 @@ function Footer() {
                 <ul>
                     <h2>Contact Us</h2>
                     <li>
-                        <a href='#'>Adiva</a>
+                        <a href='https://www.linkedin.com/in/adiva-arini-puteri-91bbbb169/'>Adiva</a>
                     </li>
                     <li>
-                        <a href='#'>Zaidan</a>
+                        <a href='https://www.linkedin.com/in/athallahmzaidan/'>Zaidan</a>
                     </li>
                     <li>
-                        <a href='#'>Faizel</a>
+                        <a href='https://www.linkedin.com/in/feizal-reza-87a920169'>Faizel</a>
                     </li>
                     <li>
-                        <a href='#'>Orlando</a>
+                        <a href='https://www.linkedin.com/in/orlando-riski-956549207/'>Orlando</a>
                     </li>                    
                 </ul>
                 <ul>
