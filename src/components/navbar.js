@@ -2,12 +2,12 @@ import React from "react";
 import "../style/navbar.css";
 
 
-function Navbar() {
+function Navbar({title}) {
 
     return (
         <div className="navbar">
             <div className="searchInput">
-                <input type="text" placeholder="Search"/>
+                <p className="navbar-title">{title}</p>
             </div>
         </div>
     )

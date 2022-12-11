@@ -22,9 +22,11 @@ const CardProfileEdit = () => {
         <label htmlFor="address">Address</label>
         <input type="text" name="address" id="address" />
       </div>
+      <div className="button_container">
       <button className="button-save" type="submit">
         Simpan
       </button>
+      </div>
     </div>
   );
 };

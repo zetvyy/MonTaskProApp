@@ -15,12 +15,13 @@ export const registerPage = (data) => {
         const user = userCredential.user;
         resolve(user);
       })
-      .catch((error) => {
-        const errorMessage = error.code;
+      .catch((err) => {
+        const errorMessage = err.code;
         reject(errorMessage);
       });
   });
 };
+
 export const registerPageWithGogle = () => {
   return new Promise((resolve, reject) => {
     const provider = new GoogleAuthProvider();

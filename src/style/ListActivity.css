@@ -126,7 +126,9 @@
     margin-top: 15px;
 }
 
-.task_card_container > p {
+.task_card_container > p ,
+.inproggres_card_container > p ,
+.completed_card_container > p{
     text-align: center;
     font-size: .9em;
 }

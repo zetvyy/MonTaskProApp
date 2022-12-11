@@ -28,7 +28,15 @@ function Login() {
 
   const onHandleSubmitWithGoogle = async () => {
     const responseGogle = await registerPageWithGogle().catch((err) => err);
-    console.log(responseGogle);
+    if (responseGogle) {
+      validasiFormRegisLogin(responseGogle);
+      if (responseGogle.uid !== undefined) {
+        localStorage.setItem("id", responseGogle.uid);
+        setTimeout(() => {
+          navigate("/Beranda");
+        }, 1610)
+      }
+    }
   };
 
   const onNewRegister = () => {
